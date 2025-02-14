@@ -10,7 +10,7 @@ describe("Testes da classe Cubo", ()=>{
     test("Teste do volume", ()=>{
         const aresta = 4
         const volumeEsperado = Math.pow(aresta,3)
-        const cubo = new Cubo
+        const cubo = new Cubo(aresta)
 
         expect(cubo.calcularVolume()).toBeCloseTo(volumeEsperado,2)
     })
